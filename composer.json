@@ -1,0 +1,13 @@
+{
+    "name": "vendor/chess-voice",
+    "description": "Description of project chess-voice.",
+    "authors": [
+        {
+            "name": "gleidson",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "4.3.5"
+    }
+}
