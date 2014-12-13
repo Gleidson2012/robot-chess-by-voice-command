@@ -40,6 +40,10 @@ class CommandValidationTest  extends PHPUnit_Framework_TestCase {
         $this->assertTrue($this->commandValidation->isValidCommand($command));
         $command = 'mover de h8 para a1';
         $this->assertTrue($this->commandValidation->isValidCommand($command));
+        $command = 'de h8 para a1';
+        $this->assertTrue($this->commandValidation->isValidCommand($command));
+        $command = 'h8 para a1';
+        $this->assertTrue($this->commandValidation->isValidCommand($command));
         
         $command = 'mover de 1a para 2a';
         $this->assertFalse($this->commandValidation->isValidCommand($command));
@@ -48,6 +52,10 @@ class CommandValidationTest  extends PHPUnit_Framework_TestCase {
         $command = 'mover de 8h para 8a';
         $this->assertFalse($this->commandValidation->isValidCommand($command));
         $command = 'mover de hh para aa';
+        $this->assertFalse($this->commandValidation->isValidCommand($command));
+        $command = 'de hh para aa';
+        $this->assertFalse($this->commandValidation->isValidCommand($command));
+        $command = 'hh para aa';
         $this->assertFalse($this->commandValidation->isValidCommand($command));
     }
     

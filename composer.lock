@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b89eb01762c5363ce81c5870b0a5e9f9",
+    "hash": "f8303277249d2ca2be998ff972d2bec3",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -59,6 +59,44 @@
                 "instantiate"
             ],
             "time": "2014-10-13 12:58:55"
+        },
+        {
+            "name": "hyperthese/php-serial",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Xowap/PHP-Serial.git",
+                "reference": "69f31b281654f845134c9424d5656af28170d2e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Xowap/PHP-Serial/zipball/69f31b281654f845134c9424d5656af28170d2e6",
+                "reference": "69f31b281654f845134c9424d5656af28170d2e6",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Rémy Sanchez",
+                    "email": "remy.sanchez@hyperthese.net"
+                }
+            ],
+            "description": "Multi-platform serial port access convenience class",
+            "time": "2014-02-21 00:24:39"
         },
         {
             "name": "phpunit/php-code-coverage",

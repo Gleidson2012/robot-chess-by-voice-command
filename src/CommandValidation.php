@@ -12,7 +12,7 @@ class CommandValidation {
 
     public function isValidCommand($command) {
         if (!$this->isEmpty($command)) {
-            return (boolean) preg_match("/mover de ([a-h][1-8]) para ([a-h][1-8])/", $command);
+            return (boolean) preg_match("/\w?([a-h] ?[1-8]) para ([a-h] ?[1-8])/", $command);
         }
         return false;
     }

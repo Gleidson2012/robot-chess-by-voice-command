@@ -8,6 +8,7 @@
         }
     ],
     "require": {
-        "phpunit/phpunit": "4.3.5"
+        "phpunit/phpunit": "4.3.5",
+        "hyperthese/php-serial": "1.0.1"
     }
 }
